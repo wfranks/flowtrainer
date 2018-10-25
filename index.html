@@ -29,7 +29,7 @@
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
         <a class="navbar-brand" href="#">Flow Trainer</a>
-        <a class="btn btn-primary" href="#">Join our Beta</a>
+        <a id="joinourbeta" class="btn btn-primary" href="#">Join Beta</a>
       </div>
     </nav>
 
@@ -39,16 +39,16 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">Enter flow, stay on task, maximize productivity with Flow Feedback</h1>
+            <h1 class="mb-5">Enter flow, stay on task, maximize productivity with Flow Trainer</h1>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <form action="https://julyandavey.us19.list-manage.com/subscribe/post?u=a83b88c2747c2db8e94054db7&amp;id=8e8e15e1f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" value="" name="EMAIL" class="form-control form-control-lg" placeholder="Enter your email...">
+                  <input id="emailinput" type="email" value="" name="EMAIL" class="form-control form-control-lg" placeholder="Enter your email...">
                 </div>
                 <div class="col-12 col-md-3">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary">Join our Beta!</button>
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Join Beta</button>
                 </div>
               </div>
             </form>
@@ -66,7 +66,7 @@
               <div class="features-icons-icon d-flex">
                 <i class="fas fa-tasks m-auto text-primary"></i>
               </div>
-              <h3>Choose Task, Stay on Task</h3>
+              <h3>Stay on Task</h3>
               <p class="lead mb-0">Flow Trainer knows when you're on task and stops you going AWOL!</p>
             </div>
           </div>
@@ -165,7 +165,7 @@
                   <input type="email" value="" name="EMAIL" class="form-control form-control-lg" placeholder="Enter your email...">
                 </div>
                 <div class="col-12 col-md-3">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary">Join our beta!</button>
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Join Beta</button>
                 </div>
               </div>
             </form>
@@ -207,6 +207,11 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $("#joinourbeta").click(function() {
+        $('#emailinput').focus();
+      });
+    </script>
 
   </body>
 
